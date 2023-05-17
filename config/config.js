@@ -5,7 +5,7 @@ require("dotenv");
 
 // Defining a function to connect to the database
 const dbConnect = () => {
-	console.log(process.env.DATABASE_URL)
+	
 	// Connecting to the database using the provided URL from the environment variables
 	mongoose
 		.connect(process.env.DATABASE_URL, {
