@@ -8,7 +8,7 @@ const dbConnect = () => {
 	console.log(process.env.DATABASE_URL)
 	// Connecting to the database using the provided URL from the environment variables
 	mongoose
-		.connect("mongodb+srv://gup7nik:BwrFtvo4YXQoJM8r@cluster0.1cjahan.mongodb.net/PortfolioDB", {
+		.connect(process.env.DATABASE_URL, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		})
