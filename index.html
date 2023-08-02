@@ -11,16 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
     <!-- header section -->
 
-    <header> <a href="#" class="logo">Nikhil<span class="color">Fullstack</span></a>
+    <header class="bg-pink-400"> <a href="#" class="logo">Nikhil<span class="color">Fullstack</span></a>
         <div id="burger-menu"> <span></span> </div>
 
-        <nav class="navbar">
+        <nav class="navbar ">
             <ul>
                 <li><a class="active" href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -55,11 +57,11 @@
 
     <!-- about section starts -->
 
-    <section class="about" id="about">
-        <div class="image" data-aos="fade-right"> <img src="images/13.jpg" alt="" height="650px" width="450px"> </div>
+    <section class="about h-[180px] md:h-[950px]" id="about">
+        <div class="image" data-aos="fade-right"> <img src="images/13.jpg" class="hidden md:flex" alt="" height="650px" width="450px"> </div>
         <div class="content">
             <h3>About</h3>
-            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Hola, My name is Nikhil and I'm a web
+            <p data-aos="fade-left " data-aos-duration="1500" data-aos-delay="500">Hola, My name is Nikhil and I'm a web
                 developer from Kanpur, India. </p>
             <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">I am in edge of third-year Btech
                 student from <a href="https://www.nitj.ac.in/">Dr. B R Ambedkar National Institute of Technology,
@@ -97,26 +99,24 @@
     <!-- services section start -->
 
     <section class="services" id="services">
-        <h3 class="title">My skills</h3>
+        <h3 class="title ">My skills</h3>
         <div class="serv-content">
             <div class="card">
                 <div class="box"> <i class='bx bx-code-alt'></i>
-                    <div class="text">Web Development</div>
-                    <p class="par-card">HTML5 | CSS3 | Sass | Styled Components | Tailwind CSS | JavaScript | Bootstrap5
-                        | Gsap | Git | GitHub | React |
-                        Redux | REST API | Node.js | Express.js | Mongo DB</p>
+                    <div class="text">Frontend development</div>
+                    <p class="par-card">HTML5 | CSS3 | Sass | Styled Components | Tailwind CSS | JavaScript | Gsap | Git | GitHub | React | Redux | REST API </p>
                 </div>
             </div>
             <div class="card">
                 <div class="box"> <i class='bx bx-palette'></i>
-                    <div class="text">Web & Graphic Design</div>
-                    <p class="par-card">Adobe Photoshop | Figma</p>
+                    <div class="text">Backend Development</div>
+                    <p class="par-card"> Node.js | Express.js | Mongo DB | npm</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box"> <i class='bx bx-camera'></i>
-                    <div class="text">Photography</div>
-                    <p class="par-card">Adobe Photoshop </p>
+                    <div class="text">Data Analytics</div>
+                    <p class="par-card">Python | Numpy | Pandas | Matplotlib </p>
                 </div>
             </div>
         </div>
@@ -134,14 +134,55 @@
         </div>
 
         <div id="myBtnContainer">
-            <div class="category-title" id="html"> Html5/Css5/Tailwind</div>
-            <div class="category-title" id="js"> Bootstrap/JavaScript</div>
-            <div class="category-title" id="react"> React/RTK</div>
+            <div class="category-title" id="html"> Html5/Tailwind</div>
+            <div class="category-title" id="js"> JavaScript</div>
+            <div class="category-title" id="react"> React</div>
+            <div class="category-title" id="python"> Python</div>
+            <div class="category-title" id="mern"> MERN STACK</div>
             <div class="category-title active" id="all"> Show all</div>
 
         </div>
 
         <div class="image-container">
+
+            <div class="projects_card mern all">
+                <div class="image"><img src="./images/friendify.png" alt="">
+                    <div class="projects__modal">
+                        <div>
+                            <p class="projects__subtitle">Friendify Social Media App</p>
+                            <h4 class="projects__title">React | Express | NodeJs | MongoDb</h4>
+                            <div class="link"> <a href="https://friendify-frontend.vercel.app/"
+                                    class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects_card mern all">
+                <div class="image"><img src="./images/study.png" alt="">
+                    <div class="projects__modal">
+                        <div>
+                            <p class="projects__subtitle">Study Notion EdTech App</p>
+                            <h4 class="projects__title">React | Express | NodeJs | MongoDb</h4>
+                            <div class="link"> <a href="https://study-notion-dusky.vercel.app/"
+                                    class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="projects_card python all">
+                <div class="image"><img src="https://user-images.githubusercontent.com/89846475/215349625-d91d3c25-0352-40cc-894f-8c08ac1d1e46.png" alt="">
+                    <div class="projects__modal">
+                        <div>
+                            <p class="projects__subtitle">Python Games</p>
+                            <h4 class="projects__title">Python DSA</h4>
+                            <div class="link"> <a href="https://github.com/NikhilFullstack/Games-Python" class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="projects_card html all">
                 <div class="image"><img src="https://razorpay.com/build/browser/static/og-default.18624133.png" alt="">
@@ -156,7 +197,7 @@
                 </div>
             </div>
 
-            <div class="projects_card js all">
+            <!-- <div class="projects_card js all">
                 <div class="image"><img
                         src="https://th.bing.com/th?id=OIP.LA_MIYPhBeZ9f-AIeGA8hAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
                         alt="btn sound">
@@ -170,10 +211,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="projects_card js all">
-                <div class="image"><img src="images/15.jpg" alt="food">
+                <div class="image"><img src="./images/quote.png" alt="food">
                     <div class="projects__modal">
                         <div>
                             <p class="projects__subtitle">Quote of the day</p>
@@ -202,7 +243,7 @@
 
             <div class="projects_card all js">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbc9YGtETafkHAYsOtFxF8x_tCMQBF_mgHeQ&usqp=CAU"
+                        src="./images/lang.png"
                         alt="food">
                     <div class="projects__modal">
                         <div>
@@ -218,7 +259,7 @@
 
             <div class="projects_card all js">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrjs2eNHcHvyEml-3DJrrtYW3oJn_stuICw&usqp=CAU"
+                        src="./images/weather.png"
                         alt="food">
                     <div class="projects__modal">
                         <div>
@@ -233,7 +274,7 @@
 
             <div class="projects_card all js">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkKeNpfLaMShoODUxCJQwTDIQICOtEvSeDaQ&usqp=CAU"
+                        src="./images/tic.png"
                         alt="food">
                     <div class="projects__modal">
                         <div>
@@ -250,7 +291,7 @@
 
             <div class="projects_card react all">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_8g7U8g0vPBnjJjWqoCLyTGGkvFkTLKk0Vw&usqp=CAU"
+                        src="./images/news.png"
                         alt="food">
                     <div class="projects__modal">
                         <div>
@@ -265,7 +306,7 @@
 
             <div class="projects_card react all">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfE0RHvy6NXGh_9Qkt0bijkHIsdvMlrWD1ap1DQKXaQVXFcSbwo6oLSSjNm-80lNw41do&usqp=CAU"
+                        src="https://media.giphy.com/media/3oEjHRFm4DK8T68upW/giphy.gif"
                         alt="food">
                     <div class="projects__modal">
                         <div>
@@ -279,13 +320,13 @@
             </div>
             <div class="projects_card react all">
                 <div class="image"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqjY8_3ZktWHQzlqec7P0Dyvh3SmoXd_OOg&usqp=CAU"
+                        src="./images/addcart.png"
                         alt="food">
                     <div class="projects__modal">
                         <div>
                             <p class="projects__subtitle">Add to Cart</p>
                             <h4 class="projects__title">React/API</h4>
-                            <div class="link"> <a href="https://github.com/NikhilFullstack/Card-List-Via-Category"
+                            <div class="link"> <a href="https://nikhilfullstack-74ee6.web.app/"
                                     class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
                         </div>
                     </div>
@@ -306,7 +347,7 @@
 
     <section class="message" id="contact">
         <div class="contact-title">
-            <h3 class="title"> Contact me</h3>
+            <h3 class="title "> Contact me</h3>
         </div>
         <div class="row">
             <div class="image"> <img
