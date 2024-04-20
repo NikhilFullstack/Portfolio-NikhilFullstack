@@ -52,7 +52,7 @@ words.forEach((word) => {
 
 gsap.to("h3", {
     text: "web developer",
-    duration: 2,
+    duration: 1,
     repeat: -1,
     repeatDelay: .7,
     ease: "power1.in",
@@ -69,6 +69,9 @@ burgerMenu.addEventListener("click", function(){
     this.classList.toggle("close");
     overlay.classList.toggle("overlay");
 });
+function closekaro(){
+    overlay.classList.toggle("close");
+}
 
 // initializing aos  
 

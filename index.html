@@ -15,11 +15,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-purple-600 text-white">
 
     <!-- header section -->
 
-    <header class="bg-pink-400"> <a href="#" class="logo">Nikhil<span class="color">Fullstack</span></a>
+    <header class="bg-purple-400"> <a href="#" class="logo text-white">Nikhil<span class="color">Fullstack</span></a>
         <div id="burger-menu"> <span></span> </div>
 
         <nav class="navbar ">
@@ -33,23 +33,36 @@
             </ul>
             </ul>
         </nav>
+        <nav id="menu" class="flex flex-col flex-wrap">
+            <ul>
+                <li ><a class="active" href="#home" onclick="closekaro()">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact me</a></li>
+                <li><a href="./Resume.pdf" download>resume</a></li>
+            </ul>
+            </ul>
+        </nav>
+        
     </header>
 
     <!-- header section ends -->
 
     <!-- home section starts  -->
 
-    <section class="home" id="home">
-        <div class="content">
+    <section class="home flex flex-row min-h-max w-screen" id="home">
+        <div class="content w-1/2 h-full">
             <div>
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Nikhil Gupta</div>
                 <div class="text-3">And I'm a <span class="animated-text"></span><span class="cursor">_</span></div> <a
-                    href="#contact"><button class="btn" data-aos="fade-right" data-aos-duration="3000"
-                        data-aos-delay="1500">Contact me</button></a>
+                    href="#contact"><button class="btn" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-delay="1000">Contact me</button></a>
             </div>
+
         </div>
-        <div class="image" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="2000"> <img src="images/02.jpg"
+        <div class="image w-1/2 h-full" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"> <img class="w-1/2" src="images/02.jpg"
                 alt=""> </div>
     </section>
 
@@ -57,16 +70,16 @@
 
     <!-- about section starts -->
 
-    <section class="about h-[180px] md:h-[950px]" id="about">
-        <div class="image" data-aos="fade-right"> <img src="images/13.jpg" class="hidden md:flex" alt="" height="650px" width="450px"> </div>
-        <div class="content">
+    <section class="about w-screen flex flex-wrap min-h-max justify-start" id="about">
+        <div class="image hidden lg:flex h-full w-1/2" data-aos="fade-right"> <img src="images/13.jpg" class="hidden md:flex h-full w-full" alt=""> </div>
+        <div class="content pt-0">
             <h3>About</h3>
-            <p data-aos="fade-left " data-aos-duration="1500" data-aos-delay="500">Hola, My name is Nikhil and I'm a web
+            <p data-aos="fade-left " data-aos-duration="1000" data-aos-delay="500">Hola, My name is Nikhil and I'm a web
                 developer from Kanpur, India. </p>
-            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">I am final year Btech
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">I am final year Btech
                 student from <a href="https://www.nitj.ac.in/">Dr. B R Ambedkar National Institute of Technology,
                     Jalandhar</a> with a passion for MERN Stack development. I am well versed with these Techs HTML5, CSS, Tailwind
-                CSS, JavaScript, React, Redux Toolkit, NodeJs, Express.js, MongoDB, SQL, Postman and I am currently expanding my skills with Continuous learning. My goal is
+                CSS, JavaScript, React, Redux Toolkit,NEXTJs, NodeJs, Express.js, MongoDB, SQL, Postman and I am currently expanding my skills with Continuous learning. My goal is
                 to use my knowledge and creativity to create responsive and user-friendly websites that provide an
                 enjoyable user experience. I am constantly learning and improving my skills to keep up with the latest
                 trends and technologies in web development. In my free time, I enjoy experimenting with new coding
@@ -75,18 +88,18 @@
                 projects on my <a href="https://github.com/NikhilFullstack">Github</a> profile. And I'm currently
                 improving my skills in MERN
                 stack.</p>
-            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">I design and develop experience that
+            <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">I design and develop experience that
                 make people's lives simple.</p>
             <div class="about-items">
-                <div class="item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1750">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <h4 class="number">1 +</h4>
                     <p>year experience in web development</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2000">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <h4 class="number">0 +</h4>
                     <p>years experience in graphic design</p>
                 </div>
-                <div class="item" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2250">
+                <div class="item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <h4 class="number">2 +</h4>
                     <p>years experience in photography</p>
                 </div>
@@ -151,7 +164,7 @@
                         <div>
                             <p class="projects__subtitle">Friendify Social Media App</p>
                             <h4 class="projects__title">React | Express | NodeJs | MongoDb</h4>
-                            <div class="link"> <a href="https://friendify-frontend.vercel.app/"
+                            <div class="link"> <a href="https://mediaproject.vercel.app/"
                                     class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
                         </div>
                     </div>
@@ -162,7 +175,7 @@
                 <div class="image"><img src="./images/study.png" alt="">
                     <div class="projects__modal">
                         <div>
-                            <p class="projects__subtitle">Study Notion EdTech App</p>
+                            <p class="projects__subtitle">StudyNotion EdTech App</p>
                             <h4 class="projects__title">React | Express | NodeJs | MongoDb</h4>
                             <div class="link"> <a href="https://study-notion-dusky.vercel.app/"
                                     class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
@@ -192,9 +205,9 @@
                         alt="food">
                     <div class="projects__modal">
                         <div>
-                            <p class="projects__subtitle">News React app</p>
-                            <h4 class="projects__title">React/useContext/API</h4>
-                            <div class="link"> <a href="https://github.com/NikhilFullstack/NEWS-REACT-APP"
+                            <p class="projects__subtitle">NewsSphere</p>
+                            <h4 class="projects__title">React/TailwindCss</h4>
+                            <div class="link"> <a href="https://news-react-app-eta.vercel.app/"
                                     class="button__small"> <i class='bx bx-link'></i>View demo here </a> </div>
                         </div>
                     </div>
@@ -360,7 +373,7 @@
                     src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""> </div>
                     
-            <form id="form" method="POST"> 
+            <form id="form" style="background-color: #c084fc;" method="POST"> 
                 <input type="text" required placeholder="your name" class="box" name="name">
                 <input type="email"
                     required placeholder="your email" class="box" name="email">

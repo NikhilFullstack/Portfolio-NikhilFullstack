@@ -7,7 +7,7 @@ form.addEventListener('submit',async (e)=>{
     console.log(data); 
         console.log("kahani shuru ho gyi")
     const savedUserResponse = await fetch(
-        `https://portfolio-t127.onrender.com/api/v1/createUser`,
+        ``,
         {
           method: "POST",
           headers: {
